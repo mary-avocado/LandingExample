@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Digital Product Agency </title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .block1 {
+        background-image: url(girl_mountain.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        padding-top: 150px;
+        padding-bottom: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+        box-sizing: border-box;
+        min-width: 530px;
+        filter: grayscale(40%);
+      }
+      .block1 h1 {
+        font-size: 3rem;
+        color: white;
+        text-shadow: 0px 0px 2px #555;
+        margin-top: 200px;
+        margin-bottom: 5px;
+        letter-spacing: 1.5px;
+      }
+      .block1 p {
+        font-size: 1.4rem;
+        color: white;
+        text-shadow: 0px 0px 2px #555;
+      }
+      .butnvideo {
+        border: 0;
+        line-height: 2.5;
+        padding: 5px 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #333;
+        background-color: white;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+      }
+      .butnvideo:hover {
+       background-color: #CCCCCC; 
+      }
+      .play {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+      .block2 {
+        margin-top: 70px;
+        filter: grayscale(40%);
+      }
+      .block2 h2 {
+        font-weight: bolder;
+      }
+      .block2 h2, .block2 p {
+        color: #1F1F1F;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        padding: 4px;
+      }
+      .block3 {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        font-family: 'Roboto', sans-serif;
+        filter: grayscale(40%);
+      }
+      .bl3sub {
+        width: 350px;
+        min-width: 350px;
+        padding: 10px;
+      }
+      .block3 h3 {
+        font-weight: bold;
+      }
+
+      .block3 img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+        object-position: left center;
+      }
+      .block3 a {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.8rem;
+        color:#B4B4B4;
+      }
+      .block3 h3, .subheader {
+        display: inline-block;
+        margin-bottom: 0;
+        
+      }
+      .subheader {
+        margin-left: 2em;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        color: #B4B4B4;
+      }
+      .context {
+        margin-top: 10px; 
+        font-size: 0.9rem;
+      }
+      .block4 {
+        display: flex;
+        margin-top: 50px;
+        justify-content: center;
+        filter: grayscale(40%);
+      }
+      .block4 img {
+        height: 350px;
+        width: 550px;
+        margin: 10px;
+      }
+      .block5 {
+        background-color: rgb(250,250,250);
+        display: grid;
+        grid-template-columns: 290px 290px 290px;
+        grid-template-rows: 240px 240px;
+        grid-gap: 5px;
+        padding: 50px;
+        justify-content: center;
+        font-family:  'Roboto', sans-serif;
+        margin-top: 30px;
+      }
+      .block5 p {
+        font-size: 1rem;
+        padding-bottom: 15px;
+      }
+      .block5 img {
+        height: 25px;
+        width: 25px;
+        filter: contrast(20%);
+        padding-top: 30px;
+        padding-left: 10px;
+      }
+      .bl5sub {
+        background-color: white;
+        padding-left: 25px;
+      }
+      .bl5sub:hover {
+        background-color: #4852C2;
+        color: honeydew;
+      } 
+      .bl5sub:hover img {
+        filter: invert(100%);
+      }
+      .block6 {
+        background-image: url(iphone.jpg);
+        width: 100%;
+        height: 300px;
+        background-position: center;
+        text-align: center;
+        padding-top: 50px;
+        margin-top: 0px;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 1px;
+        filter: grayscale(40%);
+      }
+      .block6 h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+      }
+      .block6 p {
+        font-size: 1.2rem;
+        color: white;
+      }
+      .block7 {
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: 300px 200px;
+        justify-content: center; 
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 50px;
+        grid-gap: 5px;
+        filter: grayscale(40%);
+      }
+      .block7 img {
+        width: 100%;
+        height: 100%;
+      }
+      .pic71 {
+        grid-column: 1 / 3;
+      }
+      .block51 {
+        background-color: #eee;
+        display: flex;
+        padding: 40px;
+        justify-content: center;
+        align-items: baseline;
+        font-family:  'Roboto', sans-serif;
+        filter: grayscale(40%);
+      }
+      .bl51sub {
+        background-color: white;
+        min-width: 200px;
+        height: 280px;
+        margin: 5px;
+        padding: 40px;
+        max-width: 270px;
+      }
+      .block51 img {
+        height: 25px;
+        width: 25px;
+        filter: contrast(20%);
+        padding-left: 10px; 
+      }
+      #bigger {
+        height: 320px;
+        min-width: 220px;
+        padding-top: 60px;
+      }
+      .styled {
+       border: 0;
+       line-height: 2.5;
+       padding: 10px;
+       font-size: 1rem;
+       text-align: center;
+       color: #373737;
+       font-family: 'Roboto', sans-serif;
+       background-color: #E6E6E6;
+       font-size: 0.8rem;
+       text-transform: uppercase;
+       text-decoration: none;
+
+       }
+      .styled:hover {
+       background-color: #CCCCCC;
+      }
+      .block9 {
+        padding: 8px;
+        filter: grayscale(40%);
+        padding: 30px;
+        padding-left: 70px;
+        max-width: 900px;
+        margin: auto;
+      }
+      .block9 h2 {
+        font-family:'Roboto', sans-serif;
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+      .block9 p {
+        font-family:'Roboto', sans-serif;
+        font-size: 1.2rem;
+        padding-left: 20px;
+      }   
+      .qmark {
+        height: 20px;
+        width: 20px;
+        
+      }
+      #map{
+        width: 100%;
+        position: absolute;
+      } 
+      #address {
+        margin-top: 420px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        border: 6px #b4b4b4;
+      }
+      .line {
+        margin-top: 20px;
+        background-color: gray;
+        height: 1px;
+        width: 100%;
+      }
+      footer {
+        padding: 30px;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fill, 15rem);
+        justify-content: center;
+        filter: grayscale(40%);
+        font-family:'Roboto', sans-serif;
+        font-size: 1rem;
+      }
+      @media (min-width: 900px) {
+        footer {
+          grid-template-columns: 15rem 15rem 15rem;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="block1">
+      <h1> Digital Product Agency </h1>
+      <p> Look no further. You came to the right... place </p>
+      <a  target="_blank" rel="noopener noreferrer" class="butnvideo" href="https://youtube.com/watch?v=lFGnsdV-sR4">
+        <img class="play" src="play.png" alt="play img" >
+        Watch intro video
+      </a>
+    </div>
+    <div class="block2">
+      <h2> Latest products </h2>
+      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Sed consequuntur laborum enim, pariatur modi inventore ut repellendus incidunt aspernatur est?
+      </p>
+    </div>
+    <div class="block3">
+      <div class="bl3sub bl3sub1">
+        <img src="keyboard_yellow.jpg" alt="Hands on the keyboard">
+        <h3>Workspace </h3>
+        <p class="subheader">Management</p>
+        <p class="context">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Accusamus eligendi quasi voluptatibus. Esse consequatur aut 
+          commodi facere debitis obcaecati incidunt!</p>
+        <a href="managment.html"> Read more </a>
+      </div>
+      <div class="bl3sub bl3sub2">
+        <img src="minimal.jpg" alt="Desk with computer">
+        <h3> Minimalism </h3>
+        <p class="subheader">Development</p class="subheader">
+        <p class="context">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Accusamus eligendi quasi voluptatibus. Esse consequatur aut 
+          commodi facere debitis obcaecati incidunt!</p>
+        <a href="development.html"> Read more </a>
+      </div>
+      <div class="bl3sub bl3sub3">
+        <img src="keyboard.jpg" alt="Hand on the keybord with coffee">
+        <h3> Clean Style </h3>
+        <p class="subheader">Design</p>
+        <p class="context">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Accusamus eligendi quasi voluptatibus. Esse consequatur aut 
+          commodi facere debitis obcaecati incidunt!</p>
+        <a href="design.html"> Read more </a>
+      </div>
+    </div>
+    <div class="block4">
+      <img src="keyboard_yellow.jpg" alt="Keyboard">
+      <img src="keyboard.jpg" alt="Keyboard">
+    </div>
+    <div class="block5">
+      <div class="bl5sub">
+        <img src="comp.png" alt="Comp">
+        <h3> Art of Coding</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Corrupti nisi.</p>
+      </div>
+      <div class="bl5sub">
+        <img src="pad.png" alt="Pad">
+        <h3>Responsive Design</h3>
+        <p>Lorem, ipsum dolor sit amet  adipisicing elit. Deleniti nisi <br> reiciendis quam sint.</p>
+      </div>
+      <div class="bl5sub">
+        <img src="coin.png" alt="Coin">
+        <h3> Feature Rich</h3>
+        <p> Deleniti nisi consequatur quam tenetur expedita saepe <br> asperiores!</p>
+      </div>
+      <div class="bl5sub">
+        <img src="book.png" alt="Book">
+        <h3>Useful Documentation</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit!</p>
+      </div>
+      <div class="bl5sub">
+        <img src="speed.png" alt="Speed">
+        <h3>Fast Delivery</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit nisi consequatur reiciendis.</p>
+      </div>
+      <div class="bl5sub">
+        <img src="coin.png" alt="Coin">
+        <h3>Free Plugins</h3>
+        <p>Lorem, ipsum dolor sit amet <br> deleniti sint asperiores!</p>
+      </div>
+    </div>
+    <div class="block6">
+     <h2> Displaying the Result </h2>
+     <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Accusantium labore recusandae pariatur voluptatem,
+        asperiores aperiam consectetur. <br> Tempore quas porro quasi repellendus veritatis atque, 
+        libero nobis beatae laboriosam dolor, autem esse?</p>
+    </div>
+    <div class="block7">
+     <img class="pic71" src="sky.png" alt="Sky">
+     <img src="pic.png" alt="Picture">
+     <img src="daisy.jpg" alt="Daisy">
+     <img src="bmx.png" alt="BMX">
+     <img src="mac.jpg" alt="Mac">
+    </div>
+    <div class="block51">
+      <div class="bl51sub">
+       <img src="lab.png" alt="Lab">
+       <h4> Starter Kit $49 </h4>
+       <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Voluptas, quos.</span>
+        <ul>
+          <li> Basic Features </li>
+          <li> Up to 5 products</li>
+          <li> 50 Users Panels </li>
+        </ul>
+        <a class="styled" href="payment.html"> Choose </a>
+      </div>
+      <div class="bl51sub" id="bigger">
+        <img src="coin.png" alt="Coin">
+        <h4>Professional $149</h4>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quos.</span>
+        <ul>
+          <li> Basic Features </li>
+          <li> Up to 100 products</li>
+          <li> 100 Users Panels </li>
+        </ul>
+        <a class="styled" href="payment.html"> Choose </a>
+      </div>
+      <div class="bl51sub">
+        <img src="shield.png" alt="Shield">
+        <h4> Advanced $249 </h4>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptas, quos.</span>
+        <ul>
+          <li> Extended Features </li>
+          <li> Unlimited products</li>
+          <li> Unlimited Users Panels </li>
+        </ul>
+        <a class="styled" href="payment.html"> Choose </a>
+    </div>
+    </div>
+    <div class="block9">
+      <h2>Customer Reviews</h2>
+      <p> <img class="qmark" src="qmark.png" alt="Quotation mark"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, possimus?
+        Quis maxime accusantium doloribus voluptate corrupti <br> accusamus dolor dolore 
+        ducimus mollitia at natus modi eveniet nostrum dolores expedita nemo, 
+        libero debitis id totam, tempora <br> voluptatibus recusandae aliquam veniam. 
+        Consectetur, magni.</p>
+      <p class="subheader1"> <strong> Jonh Miller</strong> Metronic, customer </p>
+    </div>
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53357.20508415911!2d37.62871270598412!3d55.75682521183922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a785740da35%3A0x852962afd0c7bfad!2sLeningradskiy%20Railway%20Station!5e0!3m2!1sen!2sru!4v1581605172650!5m2!1sen!2sru" width="1200" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div id="address"> Komsomolskaya Square, 3, Moscow, 107140 </div>
+    <div class="line"> </div>
+    <footer> 
+        <span> Home </span>
+        <span> Privacy Policy </span> 
+
+        <span> About </span> 
+        <span> Terms and Conditions </span> 
+
+       <span> Work </span>
+       <span> Instagram </span>
+
+        <span> Contact </span>
+        <span> Youtube </span>
+    </footer>
+  </body>
+</html>

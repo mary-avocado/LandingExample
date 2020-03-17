@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      background-color: #D8D8D8;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      width: 440px;
+      height: 260px;
+      background-color: #C5C5C5;
+      border-radius: 15px;
+      top: -240px;
+      left: 80px;
+      position: relative;  
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    img {
+      height: 35px;
+      width: 235px;
+    }
+    .card2 {
+      width: 440px;
+      height: 260px;
+      background-color: rgb(171, 171, 171);
+      border-radius: 15px;
+      margin-top: 0px;
+      position: relative;
+      left: 190px;
+      top: 80px; 
+      box-shadow: 0 0 10px #222222;
+    }
+    button {
+      position: relative;
+      top: -120px;
+      left: 490px;
+      border: 0;
+      line-height: 2;
+      padding: 0 60px;
+      font-size: 1rem;
+      text-align: center;
+      color:  white;
+      background-color: #4852C2;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.5rem;
+      }
+    button:hover {
+      background-color: rgb(53, 61, 143);
+    }
+    .icon {
+      position: relative;
+      left: 200px;
+      top: 30px;
+    }
+    #cardnumber {
+      position: relative;
+      top: 70px;
+      left: 30px;
+      font-size: 1.5rem;
+      width: 380px;
+    }
+    #vt {
+      position: relative;
+      top: 75px;
+      left: 30px;
+      color:#3B3B3B;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+    #expmonth {
+      position: relative;
+      top: 65px;
+      left: 30px;
+      font-size: 1rem;
+    }
+    #expyear {
+      position: relative;
+      top: 65px;
+      left: 40px;
+      font-size: 1rem;
+    }
+    #slash {
+     position: relative;
+     top: 65px;
+     left: 35px;
+     color: #3B3B3B;
+    }
+    #stripe {
+      background-color: #3B3B3B;
+      height: 50px;
+      width: 440px;
+      position: relative;
+      top: 40px;
+    }
+    #cvc {
+      position: relative;
+      top: 70px;
+      left: 360px;
+      font-size: 1.2rem;
+      width: 50px;
+    }
+    #sc {
+      position: relative;
+      top: 70px;
+      left: 360px;
+      color: #3B3B3B;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+    }
+    .block1 {
+      background-color: white;
+      font-size: 1.8rem;
+      color: #3B3B3B;
+      padding: 50px;
+    }
+    .block2 {
+      background-color: white;
+   
+    }
+    .block3 {
+      background-color: white; 
+    }
+    main {
+        width: 700px;
+        background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <main>
+  <div class="block1">
+    <div> Order number: #753 </div>
+    <div> Total: 149$ </div>
+  </div>
+  <div class="block2">
+    <div class="card2">
+      <div id="stripe"></div>
+      <input type="text" id="cvc" name="cvc" required
+        minlength="3" maxlength="3" placeholder="CVC">
+        <p id="sc"> Security <br> code </p>
+    </div>
+    <div class="card">
+      <img class="icon" src="card.png" alt="Pay system icon">
+      <div>
+        <input type="text" id="cardnumber" name="cardnumber" required
+        minlength="16" maxlength="19" placeholder="CARD NUMBER">
+        <p id="vt"> valid thru </p>
+        <input type="text" id="expmonth" name="expmonth" required
+        minlength="2" maxlength="2" size="3" placeholder="MM">
+        <span id="slash"> / </span>
+        <input type="text" id="expyear" name="expyear" required
+        minlength="2" maxlength="2" size="3" placeholder="YY">
+      </div>
+    </div>
+  <div class="block3">
+    <button type="button"> Pay </button>
+  </div>
+</main>
+</body>
+</html>
